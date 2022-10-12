@@ -28,8 +28,9 @@ class MainActivity : AppCompatActivity() {
         appBarConfiguration = AppBarConfiguration(navController.graph)
         setupActionBarWithNavController(navController, appBarConfiguration)
 
+        //Texto que nos aparece en forma de pop-up al ahcer click en el FAB
         binding.fab.setOnClickListener { view ->
-            Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+            Snackbar.make(view, "This FAB needs an action!", Snackbar.LENGTH_LONG)
                 .setAction("Action", null).show()
         }
     }
